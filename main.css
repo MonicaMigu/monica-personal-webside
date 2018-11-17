@@ -120,6 +120,10 @@ h1 {
     margin-right: 30px;
 }
 
+.right .footer {
+    display: none;
+}
+
 .footer {
     display: flex;
     flex-direction: column;
@@ -128,4 +132,54 @@ h1 {
     margin-bottom: 20px;
     margin-top: auto;
     padding-left: 25px;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .left .border.head {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .left .border.head .content {
+        margin-left: 40px;
+    }
+
+    .left .footer {
+        display: none;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .right .footer {
+        display: inherit;
+    }
+
+    .contect-list {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .contect-list .contect .icon:nth-child(1) {
+        margin-left: 10px;
+    }
+
+    .contect-list .contect p {
+        font-size: 0;
+    }
+
+}
+
+@media screen and (max-width: 675px) {
+    
 }
